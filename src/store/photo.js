@@ -70,4 +70,3 @@ export const fetchPhoto = (id) => async (dispatch) => {
     dispatch(fetchPhotoError(error.message));
   }
 };
-

@@ -6,7 +6,6 @@ const slice = createAsyncSlice({
   name: 'user',
   fetchConfig: (token) => USER_GET(token),
 });
-
 export const fetchUser = slice.asyncAction;
 const { resetState: resetUserState, fetchError } = slice.actions;
 

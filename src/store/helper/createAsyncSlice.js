@@ -1,8 +1,7 @@
-// importa o createSlice
+// import the createSlice
 import { createSlice } from '@reduxjs/toolkit';
-
 /**
- * Cria um slice com uma função assíncrona
+ * Create a slice with an async function
  * @param {Object} config
  * @param {String} config.name
  * @param {Object} config.initialState
