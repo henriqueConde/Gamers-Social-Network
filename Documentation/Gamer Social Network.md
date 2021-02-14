@@ -20,11 +20,11 @@ The project is a social network for gamers, it has the main features of social n
 
 
 
-![use case diagram](./Gamer Social Network - Use Case.png)
+![use case diagram](./usecase.png)
 
   
 
-Here is a screenshot of the account feed page:  
+Here is the account feed page:  
 
 ![account page feed](./account-feed.png)
 
@@ -57,4 +57,10 @@ Below I will explain the basic logic of each reducer in the project.
 This reducer will be responsible for changing the photo state. My approach for dealing with this functionality was a very 'traditional' one. I have the constants, the actions, the initial state all separate and they go through the photo reducer and inside of the switch statement the global state is altered. Of course, in order for all this dynamic to work it is necessary to have a thunk that will dispatch all those actions. There is a small example with one of the actions below:  
 
 ![photo reducer](./photo-reducer.png)
+
+### Photo Post Reducer  
+
+For this reducer as well as all the other reducers I decided to take a little less traditional way of handling a the actions in Redux. Instead of having a file with all the constants, actions, thunk and reducer I created a function using the createSlice method that comes from the @reduxjs/toolkit, which is a package that was developed by the Redux team that helps you save a lot of repetition in your code like creating constants, action creators, thunk, configuring the devtools, etc. 
+
+This function allows me to reuse a lot of code. 
 
