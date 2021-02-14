@@ -1,9 +1,11 @@
 import { PHOTO_GET } from '../Api';
 
+// CONSTS
 const FETCH_PHOTO_STARTED = 'photo/fetchStarted';
 const FETCH_PHOTO_SUCCESS = 'photo/fetchSuccess';
 const FETCH_PHOTO_ERROR = 'photo/fetchError';
 
+// ACTIONS
 const fetchPhotoStarted = () => ({
   type: FETCH_PHOTO_STARTED,
 });
@@ -18,12 +20,16 @@ const fetchPhotoError = (error) => ({
   payload: error,
 });
 
+
+// INITIAL STATE
 const initialState = {
   loading: false,
   error: null,
   data: null,
 };
 
+
+// REDUCER
 export default function photo(state = initialState, action) {
   switch (action.type) {
     case FETCH_PHOTO_STARTED:
@@ -64,3 +70,4 @@ export const fetchPhoto = (id) => async (dispatch) => {
     dispatch(fetchPhotoError(error.message));
   }
 };
+

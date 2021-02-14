@@ -20,13 +20,13 @@ The project is a social network for gamers, it has the main features of social n
 
 
 
-![use case diagram](./usecase.png)
+![use case diagram](./Documentation/usecase.png)
 
   
 
 Here is the account feed page:  
 
-![account page feed](./account-feed.png)
+![account page feed](./Documentation/account-feed.png)
 
   
 
