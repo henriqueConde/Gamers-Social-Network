@@ -1,4 +1,4 @@
-export const API_URL = 'http://vegapi.test/json';
+export const API_URL = 'http://gamersnetwork.henriqueconde.com/json';
 
 export function TOKEN_POST(body) {
   return {

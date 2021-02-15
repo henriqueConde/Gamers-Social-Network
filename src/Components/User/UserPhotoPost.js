@@ -45,8 +45,6 @@ const UserPhotoPost = () => {
       <form onSubmit={handleSubmit}>
         <Input label="Title" type="text" name="title" {...title} />
         <Input label="Description" type="text" name="description" {...description} />
-        <p>{title.value}</p>
-        <p>{description.value}</p>
         <input
           className={styles.file}
           type="file"
